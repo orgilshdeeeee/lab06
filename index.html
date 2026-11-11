@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Зургийн цомог</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header>
+    <h1>Зургийн цомог</h1>
+    <button id="themeBtn" type="button">Харанхуй горим</button>
+  </header>
+
+  <main>
+    <svg width="60" height="40" viewBox="0 0 60 40" role="img" aria-label="Уул">
+      <path d="M2 38 L20 8 L30 24 L40 12 L58 38 Z" fill="currentColor"/>
+    </svg>
+
+    <h2>Гэрэл зургууд</h2>
+    <ul class="gallery">
+      <li class="card" style="--i:0">
+        <div class="inner">
+          <div class="front"><img src="img/photo1.jpg" alt="Говийн үдэш"></div>
+          <div class="back"><h3>Говийн үдэш</h3><p>Нар жаргах үеийн элсэн манхан.</p></div>
+        </div>
+        <button class="flipBtn" type="button">Эргүүлэх</button>
+      </li>
+      <li class="card" style="--i:1">
+        <div class="inner">
+          <div class="front"><img src="img/photo2.jpg" alt="Хөвсгөл нуур"></div>
+          <div class="back"><h3>Хөвсгөл нуур</h3><p>Өглөөний нуурын эрэг.</p></div>
+        </div>
+        <button class="flipBtn" type="button">Эргүүлэх</button>
+      </li>
+      <li class="card" style="--i:2">
+        <div class="inner">
+          <div class="front"><img src="img/photo3.jpg" alt="Тэрэлж"></div>
+          <div class="back"><h3>Тэрэлж</h3><p>Ийлдэг хад чулуу.</p></div>
+        </div>
+        <button class="flipBtn" type="button">Эргүүлэх</button>
+      </li>
+      <li class="card" style="--i:3">
+        <div class="inner">
+          <div class="front"><img src="img/photo4.jpg" alt="Адууны сүрэг"></div>
+          <div class="back"><h3>Адууны сүрэг</h3><p>Хээр талын адуу.</p></div>
+        </div>
+        <button class="flipBtn" type="button">Эргүүлэх</button>
+      </li>
+      <li class="card" style="--i:4">
+        <div class="inner">
+          <div class="front"><img src="img/photo5.jpg" alt="Шөнийн хот"></div>
+          <div class="back"><h3>Шөнийн хот</h3><p>Төв талбайн гэрэлтүүлэг.</p></div>
+        </div>
+        <button class="flipBtn" type="button">Эргүүлэх</button>
+      </li>
+      <li class="card" style="--i:5">
+        <div class="inner">
+          <div class="front"><img src="img/photo6.jpg" alt="Алтайн оргил"></div>
+          <div class="back"><h3>Алтайн оргил</h3><p>Мөнх цаст уулын орой.</p></div>
+        </div>
+        <button class="flipBtn" type="button">Эргүүлэх</button>
+      </li>
+    </ul>
+
+    <h2>Бичлэг</h2>
+    <video controls width="640">
+      <source src="video/clip.webm" type="video/webm">
+      <source src="video/clip.mp4" type="video/mp4">
+      <track kind="subtitles" src="video/clip.mn.vtt" srclang="mn" label="Монгол" default>
+    </video>
+
+    <h2>Байршил</h2>
+    <iframe title="Улаанбаатарын газрын зураг" loading="lazy" sandbox="allow-scripts allow-same-origin"
+      src="https://www.openstreetmap.org/export/embed.html?bbox=106.80%2C47.86%2C107.05%2C47.97&amp;layer=mapnik"
+      width="640" height="360"></iframe>
+  </main>
+
+  <footer>© 2026 Оргил. Лаб 6</footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
